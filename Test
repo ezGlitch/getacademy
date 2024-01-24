@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+	<div id=knapp>
+        <button onclick="playvid()">Trykk på meg</button>
+        <script>
+            
+            function playvid()
+            {
+				document.getElementById("knapp").innerHTML = `
+				<video id="tada" width="640" height="480">
+				<source src="https://foxi.me/tada.mp4" type="video/mp4">
+				<source src="https://foxi.me/tada.ogg" type="video/ogg">
+				`;
+				console.log("foo");
+				var vid = document.getElementById("tada")
+				vid.volume = 0.1;
+                vid.play();
+            }
+        </script>
+		</div>
+    </body>
+</html>
