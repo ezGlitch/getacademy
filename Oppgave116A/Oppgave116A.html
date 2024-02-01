@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave116A</title>
+</head>
+
+<body>
+    <div id="Alex">
+    </div>
+    <script>
+        show(1);
+        function show(number) {
+            document.getElementById(`Alex`).innerHTML = /*HTML*/`
+        <h1>${number}</h1>
+        <button onclick="show(${number + 1})">Øke med en</button>
+        <button onclick="show(${number * 2})">Doble</button>
+    `;
+        }
+    </script>
+</body>
+
+</html>
