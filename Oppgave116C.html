@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Alex"></div>
+
+    <script>
+        roomA();
+        function roomA(){
+            document.getElementById('Alex').innerHTML = /*HTML*/`
+                <h1>Du er utenfor en leilighet</h1>
+                <button onclick="roomB()">Du er utefor en leilighet</button>
+            `;
+        }
+        function roomB(){
+            document.getElementById('Alex').innerHTML = /*HTML*/`
+                <h1>Du er i gangen</h1>
+                <button onclick="roomC()">Du er i gangen</button>
+            `;
+        }
+        function roomC(){
+            document.getElementById('Alex').innerHTML = /*HTML*/`
+                <h1>Du går ut</h1>
+                <button onclick="roomD()">Du går ut</button>
+            `;
+        }
+        function roomD(){
+            document.getElementById('Alex').innerHTML = /*HTML*/`
+                <h1>Du går inn i stua</h1>
+                <button onclick="roomE()">Du går inn i stua</button>
+            `;
+        }
+        function roomE(){
+            document.getElementById('Alex').innerHTML = /*HTML*/`
+                <h1>Du går inn på badet</h1>
+                <button onclick="roomF()">Du går inn på badet</button>
+            `;
+        }
+        function roomF(){
+            document.getElementById('Alex').innerHTML = /*HTML*/`
+                <h1>Du går inn på kjøkkenet</h1>
+                <button onclick="roomA()">Du går inn på kjøkkenet</button>
+            `;
+        }
+    </script>
+    
+</body>
+</html>
