@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="myTable"> </div>
+    
+    <script>
+        show1();
+        function show1(){
+        document.getElementById('myTable').innerHTML += /*HTML*/ `
+        <table>
+        <tr>
+            <th>Dag</th>
+            <th>Time</th>
+            <th>Minutt</th>
+            <th>Temperatur</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>10</td>
+            <td>0</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>10</td>
+            <td>15</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>10</td>
+            <td>30</td>
+            <td>7</td>
+        </tr>
+    </table>
+        <button onclick="show2()"> Next </button>
+        `;
+        }
+        function show2(){
+        document.getElementById('myTable').innerHTML += /*HTML*/ `
+        <table>
+        <tr>
+            <th>Dag</th>
+            <th>Time</th>
+            <th>Minutt</th>
+            <th>Temperatur</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>10</td>
+            <td>0</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>10</td>
+            <td>15</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>10</td>
+            <td>30</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>3</td>
+            <td>3</td>
+            <td>7</td>
+        </tr>
+    </table>
+        <button onclick="show1()"> Next </button>
+        `;
+    }
+    </script>
+</body>
+</html>
